@@ -8,10 +8,12 @@
 
 #include "itpFunctions.h"
 
+// Function to check if a character is an operator
 bool isOperator(char c) {
     return c == '+' || c == '-' || c == '*' || c == '/' || c == '%';
 }
 
+// Function to return precedence of operators
 int precedence(char c) {
     if(c == '+' || c == '-') {
         return 1;
@@ -21,6 +23,7 @@ int precedence(char c) {
     return -1;
 }
 
+// Function to check if an expression is balanced
 bool isBalanced(const string &expression) {
     stack<char> stack;
     for (char c : expression) {
@@ -45,10 +48,14 @@ bool isBalanced(const string &expression) {
     return stack.empty();
 }
 
+// Function to convert infix expression to postfix expression. Returns either "expression not balanced" or the postfix expression. Uses stack.
 string infixToPostfix(const string &expression) {
+    if (!isBalanced(expression)) {
+        return "The expression is invalid: Unbalanced parentheses.";
+    }
     stack<char> stack;
-    string postfix;
-    for (char c : expression) {
+    string postfix = "The postfix expression is: ";
+    for (char c: expression) {
         if (isalpha(c) || isdigit(c)) {
             postfix += c;
         } else if (c == '(') {
@@ -58,7 +65,7 @@ string infixToPostfix(const string &expression) {
                 postfix += stack.top();
                 stack.pop();
             }
-            stack.pop(); // Remove the '(' from stack
+            stack.pop();
         } else if (isOperator(c)) {
             while (!stack.empty() && precedence(c) <= precedence(stack.top())) {
                 postfix += stack.top();

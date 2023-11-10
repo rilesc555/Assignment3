@@ -49,20 +49,14 @@ cmake_ninja_workdir = /Users/riley/CLionProjects/Assignment3/cmake-build-debug/
 
 build cmake_object_order_depends_target_Assignment3: phony || CMakeFiles/Assignment3.dir
 
-build CMakeFiles/Assignment3.dir/itpMain.cpp.o: CXX_COMPILER__Assignment3_unscanned_Debug /Users/riley/CLionProjects/Assignment3/itpMain.cpp || cmake_object_order_depends_target_Assignment3
-  DEP_FILE = CMakeFiles/Assignment3.dir/itpMain.cpp.o.d
+build CMakeFiles/Assignment3.dir/Main.cpp.o: CXX_COMPILER__Assignment3_unscanned_Debug /Users/riley/CLionProjects/Assignment3/Main.cpp || cmake_object_order_depends_target_Assignment3
+  DEP_FILE = CMakeFiles/Assignment3.dir/Main.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Assignment3.dir
   OBJECT_FILE_DIR = CMakeFiles/Assignment3.dir
 
 build CMakeFiles/Assignment3.dir/itpFunctions.cpp.o: CXX_COMPILER__Assignment3_unscanned_Debug /Users/riley/CLionProjects/Assignment3/itpFunctions.cpp || cmake_object_order_depends_target_Assignment3
   DEP_FILE = CMakeFiles/Assignment3.dir/itpFunctions.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/Assignment3.dir
-  OBJECT_FILE_DIR = CMakeFiles/Assignment3.dir
-
-build CMakeFiles/Assignment3.dir/qMain.cpp.o: CXX_COMPILER__Assignment3_unscanned_Debug /Users/riley/CLionProjects/Assignment3/qMain.cpp || cmake_object_order_depends_target_Assignment3
-  DEP_FILE = CMakeFiles/Assignment3.dir/qMain.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Assignment3.dir
   OBJECT_FILE_DIR = CMakeFiles/Assignment3.dir
@@ -75,7 +69,7 @@ build CMakeFiles/Assignment3.dir/qMain.cpp.o: CXX_COMPILER__Assignment3_unscanne
 #############################################
 # Link the executable Assignment3
 
-build Assignment3: CXX_EXECUTABLE_LINKER__Assignment3_Debug CMakeFiles/Assignment3.dir/itpMain.cpp.o CMakeFiles/Assignment3.dir/itpFunctions.cpp.o CMakeFiles/Assignment3.dir/qMain.cpp.o
+build Assignment3: CXX_EXECUTABLE_LINKER__Assignment3_Debug CMakeFiles/Assignment3.dir/Main.cpp.o CMakeFiles/Assignment3.dir/itpFunctions.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
   OBJECT_DIR = CMakeFiles/Assignment3.dir
   POST_BUILD = :

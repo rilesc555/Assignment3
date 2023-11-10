@@ -7,13 +7,14 @@
 
 using namespace std;
 
+// Queue class. Implemented in only header in order to avoid errors with templates.
 template <typename T>
 class Queue {
 private:
     struct Node {
         T data;
         Node* next;
-        Node(T d) : data(d), next(nullptr) {}
+        explicit Node(T d) : data(d), next(nullptr) {}
     };
 
     Node* front;  // pointer to the front of the queue
@@ -21,6 +22,7 @@ private:
     int count;    // number of elements in the queue
 
 public:
+    // Default constructor
     Queue() : front(nullptr), rear(nullptr), count(0) {}
 
     // Function to insert a new element at the rear of the queue

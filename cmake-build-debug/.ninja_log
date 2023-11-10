@@ -1,11 +1,10 @@
 # ninja log v5
-384	413	1699574220739815714	Assignment3	9e676f6857aff58b
-0	366	1699574220691843440	CMakeFiles/Assignment3.dir/itpMain.cpp.o	60c2ed1a4c7d48e
-1	384	1699574220710339564	CMakeFiles/Assignment3.dir/itpFunctions.cpp.o	5f28758c01657757
-4	548	1699580910173333225	CMakeFiles/Assignment3.dir/qMain.cpp.o	20bb98efe5ff9f64
-4	550	1699580910176165846	CMakeFiles/Assignment3.dir/itpMain.cpp.o	fc5178fc73681fa8
-4	562	1699580910188023404	CMakeFiles/Assignment3.dir/itpFunctions.cpp.o	21b7eac12e21ebfc
-0	6	0	clean	3c8e6cc385ee00ba
 5	333	1699580926780080703	CMakeFiles/Assignment3.dir/qMain.cpp.o	20bb98efe5ff9f64
-4	340	1699580926789101098	CMakeFiles/Assignment3.dir/itpMain.cpp.o	fc5178fc73681fa8
 4	365	1699580926814642852	CMakeFiles/Assignment3.dir/itpFunctions.cpp.o	21b7eac12e21ebfc
+0	6	0	clean	3c8e6cc385ee00ba
+4	340	1699580926789101098	CMakeFiles/Assignment3.dir/itpMain.cpp.o	fc5178fc73681fa8
+384	413	1699574220739815714	Assignment3	9e676f6857aff58b
+1	51	1699591003907149469	build.ninja	a524b66f4b9f4194
+4	495	1699591004411288216	CMakeFiles/Assignment3.dir/itpFunctions.cpp.o	21b7eac12e21ebfc
+4	324	1699591115587437423	CMakeFiles/Assignment3.dir/Main.cpp.o	5b887a488a6ba377
+324	466	1699591115728039496	Assignment3	f81a39b3d417e79e
